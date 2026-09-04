@@ -1,0 +1,34 @@
+[
+  {
+    "id": "drug_001",
+    "drug_name": "Amoxicillin-Clavulanate",
+    "aliases": ["Augmentin", "Amoxicillin Clavulanic Acid"],
+    "monograph_title": "FDA Drug Label Monograph: Amoxicillin and Clavulanate Potassium",
+    "guideline_ref": "FDA Label Ref #050722 / BNF Monograph",
+    "content": "Amoxicillin-Clavulanate is a combination penicillin-class antibacterial indicated for acute bacterial sinusitis, community-acquired pneumonia, acute otitis media, skin structure infections, and urinary tract infections. Standard adult dosage is 875/125 mg orally twice daily taken at the start of a meal to minimize gastrointestinal side effects. Common adverse effects include mild diarrhea, nausea, and abdominal discomfort. Severe allergic reactions (anaphylaxis, hives, angioedema) necessitate immediate drug discontinuation and emergency care. Paracetamol (acetaminophen) can be safely co-administered for fever or analgesia without adverse chemical interactions. Ensure total daily paracetamol dose does not exceed 4,000 mg."
+  },
+  {
+    "id": "drug_002",
+    "drug_name": "Paracetamol",
+    "aliases": ["Acetaminophen", "Tylenol", "Crocin", "Dolo 650"],
+    "monograph_title": "FDA & NHS Pharmacology Monograph: Paracetamol / Acetaminophen",
+    "guideline_ref": "NHS Formulary / FDA OTC Monograph",
+    "content": "Paracetamol is an analgesic and antipyretic agent indicated for mild-to-moderate pain and fever reduction. Maximum adult daily threshold is 4,000 mg in 24 hours (e.g. 1,000 mg every 6 hours). Avoid concurrent alcohol consumption or duplicate multi-ingredient cold/flu medications containing acetaminophen. It does not interact adversely with most antibiotics including amoxicillin, azithromycin, or cephalosporins."
+  },
+  {
+    "id": "drug_003",
+    "drug_name": "Ibuprofen",
+    "aliases": ["Advil", "Motrin", "Brufen"],
+    "monograph_title": "FDA Nonsteroidal Anti-inflammatory Drug (NSAID) Monograph: Ibuprofen",
+    "guideline_ref": "FDA NSAID Guidance / BNF",
+    "content": "Ibuprofen is a non-selective NSAID indicated for pain, inflammation, and fever. Take with food or milk to prevent gastric mucosa irritation. Contraindicated in active peptic ulcer disease, severe renal impairment, third-trimester pregnancy, or severe heart failure. Monitor for GI bleeding or hypertension."
+  },
+  {
+    "id": "drug_004",
+    "drug_name": "Metformin",
+    "aliases": ["Glucophage"],
+    "monograph_title": "ADA Clinical Monograph: Metformin Hydrochloride",
+    "guideline_ref": "ADA Standards of Care Monograph",
+    "content": "Metformin is a biguanide antihyperglycemic indicated for Type 2 Diabetes Mellitus. Administer with meals to lessen gastrointestinal adverse effects (nausea, diarrhea). Discontinue temporarily prior to iodinated radiocontrast imaging procedures to mitigate lactic acidosis risk."
+  }
+]

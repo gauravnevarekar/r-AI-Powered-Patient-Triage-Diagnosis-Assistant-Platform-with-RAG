@@ -1,0 +1,122 @@
+[
+  {
+    "id": "med_001",
+    "category": "Emergency / Surgery",
+    "condition": "Acute Appendicitis",
+    "title": "WHO Emergency & Essential Surgical Care Guidelines: Appendicitis Protocol",
+    "guideline_ref": "WHO EESC Guidelines Sec. 4.2",
+    "content": "Acute appendicitis presents classically with periumbilical abdominal pain migrating to the right lower quadrant (McBurney point) within 12 to 24 hours. Accompanied by low-grade fever, anorexia, nausea, and localized peritoneal rebound tenderness. Prompt surgical evaluation or emergency abdominal ultrasound/CT is indicated to prevent perforation and peritonitis.",
+    "urgency": "URGENT_12_24_HRS",
+    "specialist": "General Surgeon"
+  },
+  {
+    "id": "med_002",
+    "category": "Cardiology / Emergency",
+    "condition": "Acute Coronary Syndrome",
+    "title": "AHA / ESC Guidelines for Acute Chest Pain Management",
+    "guideline_ref": "AHA/ACC Chest Pain Guideline 2021",
+    "content": "Retrosternal chest pressure, tightness, or heavy sensation radiating to the left arm, jaw, or epigastrium lasting >20 minutes, accompanied by diaphoresis, dyspnea, or presyncope, constitutes high-risk Acute Coronary Syndrome. Immediate 12-lead ECG, troponin testing, and emergency resuscitation protocol activation are mandatory.",
+    "urgency": "EMERGENCY_IMMEDIATE",
+    "specialist": "Cardiologist / Emergency Physician"
+  },
+  {
+    "id": "med_003",
+    "category": "Pregnancy / Obstetrics",
+    "condition": "Severe Preeclampsia",
+    "title": "ACOG Practice Bulletin No. 222: Gestational Hypertension and Preeclampsia",
+    "guideline_ref": "ACOG Practice Bulletin #222",
+    "content": "Preeclampsia with severe features is characterized by systolic BP >= 160 mmHg or diastolic BP >= 110 mmHg after 20 weeks gestation, paired with persistent severe headache, visual disturbances (scotoma, blurred vision), right upper quadrant abdominal pain, or thrombocytopenia. Requires immediate emergency obstetric admission, IV magnesium sulfate for seizure prophylaxis, and controlled antihypertensive therapy.",
+    "urgency": "EMERGENCY_IMMEDIATE",
+    "specialist": "OB-GYN Specialist"
+  },
+  {
+    "id": "med_004",
+    "category": "Dental / Maxillofacial",
+    "condition": "Dental Abscess",
+    "title": "American Dental Association (ADA) Clinical Pathway: Odontogenic Infections",
+    "guideline_ref": "ADA Clinical Monograph 2022",
+    "content": "Odontogenic periapical abscess presents with severe localized throbbing tooth pain, facial or submandibular edema, fever, and tender regional lymphadenopathy. If airway compromise, trismus (<20mm opening), or systemic toxicity develops, urgent surgical drainage and parenteral antibiotic therapy are indicated within 12-24 hours.",
+    "urgency": "URGENT_12_24_HRS",
+    "specialist": "Dentist / Oral Surgeon"
+  },
+  {
+    "id": "med_005",
+    "category": "Pulmonology",
+    "condition": "Pneumonia",
+    "title": "NICE Guidelines NG138: Pneumonia in Adults Diagnosis and Management",
+    "guideline_ref": "NICE NG138 / BTS Guidelines",
+    "content": "Community-acquired pneumonia manifests as acute cough, purulent sputum, fever > 38°C, pleuritic chest pain, and focal crackles or bronchial breathing on auscultation. CURB-65 severity score stratification dictates ambulatory versus inpatient oral or intravenous antibiotic therapy.",
+    "urgency": "URGENT_12_24_HRS",
+    "specialist": "Pulmonologist / General Physician"
+  },
+  {
+    "id": "med_006",
+    "category": "Neurology / Emergency",
+    "condition": "Subarachnoid Hemorrhage",
+    "title": "AHA / ASA Guidelines for Management of Aneurysmal Subarachnoid Hemorrhage",
+    "guideline_ref": "AHA/ASA Stroke Guideline",
+    "content": "Sudden onset severe headache reaching peak intensity within seconds ('thunderclap headache'), often described as the worst headache of life, frequently associated with neck stiffness, photophobia, vomiting, or altered consciousness. Demands emergency non-contrast cranial CT and lumbar puncture.",
+    "urgency": "EMERGENCY_IMMEDIATE",
+    "specialist": "Neurosurgeon / Neurologist"
+  },
+  {
+    "id": "med_007",
+    "category": "Gastroenterology",
+    "condition": "Gastroesophageal Reflux Disease (GERD)",
+    "title": "ACG Clinical Guideline for the Diagnosis and Management of GERD",
+    "guideline_ref": "ACG Guideline 2022",
+    "content": "GERD presents with postprandial retrosternal burning (heartburn) and acidic regurgitation, typically exacerbated by recumbency or greasy meals. Empirical trial of proton pump inhibitors (PPIs) and lifestyle modification (head elevation, avoiding late meals) are initial first-line approaches.",
+    "urgency": "ROUTINE_CARE",
+    "specialist": "Gastroenterologist"
+  },
+  {
+    "id": "med_008",
+    "category": "Pregnancy / Obstetrics",
+    "condition": "Ectopic Pregnancy",
+    "title": "ACOG Practice Bulletin No. 193: Tubal Ectopic Pregnancy",
+    "guideline_ref": "ACOG Bulletin #193",
+    "content": "First-trimester pelvic pain accompanied by irregular vaginal bleeding and cervical motion tenderness requires immediate exclusion of tubal ectopic pregnancy via quantitative beta-hCG and transvaginal ultrasound. Hemoperitoneum from ruptured tubal ectopic pregnancy causes shoulder tip pain and hypovolemic shock requiring emergency laparoscopy.",
+    "urgency": "EMERGENCY_IMMEDIATE",
+    "specialist": "OB-GYN Specialist"
+  },
+  {
+    "id": "med_009",
+    "category": "Emergency / Infectious Disease",
+    "condition": "Sepsis / Septicemia",
+    "title": "Surviving Sepsis Campaign International Guidelines 2021",
+    "guideline_ref": "SSC Guidelines 2021",
+    "content": "Sepsis is defined as life-threatening organ dysfunction caused by a dysregulated host response to infection. SOFA / qSOFA indicators include systolic BP <= 100 mmHg, respiratory rate >= 22/min, and altered mental status. Requires emergency protocol activation within 1 hour: IV broad-spectrum antibiotics, blood cultures, and fluid resuscitation.",
+    "urgency": "EMERGENCY_IMMEDIATE",
+    "specialist": "Emergency Physician / Critical Care"
+  },
+  {
+    "id": "med_010",
+    "category": "Emergency / Urology",
+    "condition": "Testicular Torsion",
+    "title": "EAU Guidelines on Paediatric & Adult Urology: Acute Scrotum",
+    "guideline_ref": "EAU Acute Scrotum Guidelines",
+    "content": "Acute testicular torsion manifests as sudden severe unilateral scrotal pain, high-riding testicle with transverse lie, and loss of cremasteric reflex. Requires emergency surgical exploration and detorsion within 6 hours to preserve testicular viability.",
+    "urgency": "EMERGENCY_IMMEDIATE",
+    "specialist": "Urologist / ER Surgeon"
+  },
+  {
+    "id": "med_011",
+    "category": "Ophthalmology / Emergency",
+    "condition": "Acute Angle-Closure Glaucoma",
+    "title": "AAO Preferred Practice Pattern: Primary Angle Closure",
+    "guideline_ref": "AAO Guidelines 2020",
+    "content": "Sudden severe periocular pain, blurred vision, rainbow-colored halos around light sources, red eye, steamy cornea, mid-dilated fixed pupil, nausea, and headache. Demands immediate intraocular pressure-lowering topical/systemic agents and urgent laser peripheral iridotomy.",
+    "urgency": "EMERGENCY_IMMEDIATE",
+    "specialist": "Ophthalmologist"
+  },
+  {
+    "id": "med_012",
+    "category": "Infectious Disease / Tropical",
+    "condition": "Malaria",
+    "title": "WHO Guidelines for Malaria Diagnosis and Treatment",
+    "guideline_ref": "WHO Malaria Guidelines 2023",
+    "content": "Malaria presents with paroxysmal high fever, severe rigors/shaking chills, diaphoresis, headache, myalgia, and fatigue. Plasmodium falciparum species risk rapid progression to cerebral malaria, severe anemia, or acute renal failure. Diagnosis requires immediate blood smear microscopic examination or Rapid Diagnostic Test (RDT).",
+    "urgency": "EMERGENCY_IMMEDIATE",
+    "specialist": "Infectious Disease Specialist"
+  }
+]

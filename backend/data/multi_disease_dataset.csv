@@ -1,0 +1,88 @@
+condition,domain,symptoms,urgency,specialist,severity_min,duration_type,red_flag_risk
+Acute Appendicitis,General Medicine,"abdominal pain, lower right quadrant pain, nausea, vomiting, fever, loss of appetite",URGENT_12_24_HRS,General Surgeon,3,Acute,High
+Acute Coronary Syndrome,Emergency / Cardiology,"chest pain, shortness of breath, left arm radiation, sweating, dizziness, nausea",EMERGENCY_IMMEDIATE,Cardiologist,4,Acute,Critical
+Severe Preeclampsia,Pregnancy / OB-GYN,"high blood pressure, severe headache, vision changes, upper right abdominal pain, facial swelling",EMERGENCY_IMMEDIATE,OB-GYN Specialist,4,Acute,Critical
+Ectopic Pregnancy,Pregnancy / OB-GYN,"sharp pelvic pain, vaginal bleeding, dizziness, shoulder pain, fainting",EMERGENCY_IMMEDIATE,OB-GYN Specialist,4,Acute,Critical
+Dental Abscess,Dental,"severe throbbing toothache, jaw swelling, fever, difficulty swallowing, foul taste",URGENT_12_24_HRS,Dentist / Oral Surgeon,3,Acute,Medium
+Pneumonia,General / Pulmonology,"persistent cough, high fever, chest pain when breathing, shortness of breath, fatigue, chills",URGENT_12_24_HRS,Pulmonologist,3,Subacute,High
+Anaphylaxis,Emergency / Allergy,"facial swelling, throat tightness, severe wheezing, hives, sudden dizziness, hypotension",EMERGENCY_IMMEDIATE,Emergency Physician,5,Acute,Critical
+Stroke (TIA / Acute CVA),Emergency / Neurology,"facial drooping, arm weakness, slurred speech, sudden confusion, severe sudden headache",EMERGENCY_IMMEDIATE,Neurologist,4,Acute,Critical
+Acute Cholecystitis,General Medicine,"upper right abdominal pain, fever, nausea after greasy meal, jaundice",URGENT_12_24_HRS,General Surgeon,3,Acute,Medium
+Peptic Ulcer Disease,General / Gastroenterology,"burning stomach pain, bloating, heartburn, nausea, relief after antacids",ROUTINE_CARE,Gastroenterologist,2,Chronic,Low
+Gastroesophageal Reflux Disease (GERD),General / Gastroenterology,"heartburn, acid regurgitation, chest discomfort after meals, dry cough",ROUTINE_CARE,Gastroenterologist,2,Chronic,Low
+Urinary Tract Infection (UTI),General Medicine,"painful urination, frequent urination, pelvic discomfort, cloudy urine, mild fever",ROUTINE_CARE,Urologist / GP,2,Acute,Low
+Pyelonephritis (Kidney Infection),General Medicine,"flank pain, high fever, chills, nausea, painful urination",URGENT_12_24_HRS,Urologist / Nephrologist,4,Acute,High
+Migraine with Aura,Neurology,"throbbing headache, sensitivity to light, visual zigzags, nausea, unilateral pain",ROUTINE_CARE,Neurologist,3,Acute,Low
+Subarachnoid Hemorrhage,Emergency / Neurology,"thunderclap sudden headache, neck stiffness, vomiting, loss of consciousness",EMERGENCY_IMMEDIATE,Neurosurgeon,5,Acute,Critical
+Acute Bronchitis,Pulmonology,"cough with mucus, chest soreness, low fever, fatigue, mild wheezing",ROUTINE_CARE,Pulmonologist / GP,2,Subacute,Low
+Asthma Exacerbation,Pulmonology,"wheezing, chest tightness, shortness of breath, persistent cough",URGENT_12_24_HRS,Pulmonologist,3,Acute,High
+Diabetic Ketoacidosis (DKA),Endocrinology / ER,"extreme thirst, frequent urination, fruity breath, abdominal pain, rapid deep breathing, confusion",EMERGENCY_IMMEDIATE,Endocrinologist / ER,4,Acute,Critical
+Acute Pericarditis,Cardiology,"sharp chest pain worsening when lying flat, fever, friction rub, fatigue",URGENT_12_24_HRS,Cardiologist,3,Acute,Medium
+Irritable Bowel Syndrome (IBS),Gastroenterology,"abdominal cramping, bloating, alternating diarrhea and constipation",ROUTINE_CARE,Gastroenterologist,2,Chronic,Low
+Irreversible Pulpitis,Dental,"severe continuous toothache worsening with heat, radiating pain to ear",URGENT_12_24_HRS,Endodontist / Dentist,3,Acute,Low
+Gingivitis / Periodontitis,Dental,"bleeding gums, bad breath, loose teeth, swollen tender gums",ROUTINE_CARE,Periodontist / Dentist,1,Chronic,Low
+Impacted Wisdom Tooth (Pericoronitis),Dental,"jaw stiffness, pain around back molar, swollen gums, difficulty opening mouth",ROUTINE_CARE,Oral Surgeon / Dentist,2,Acute,Low
+Hyperemesis Gravidarum,Pregnancy / OB-GYN,"severe intractable vomiting in pregnancy, weight loss, dehydration, ketonuria",URGENT_12_24_HRS,OB-GYN Specialist,3,Subacute,Medium
+Gestational Diabetes,Pregnancy / OB-GYN,"increased thirst, frequent urination, fatigue, detected on glucose screening",ROUTINE_CARE,OB-GYN Specialist,1,Chronic,Low
+Miscarriage (Threatened / Incomplete),Pregnancy / OB-GYN,"cramping pelvic pain, vaginal spotting or bleeding, tissue discharge",EMERGENCY_IMMEDIATE,OB-GYN Specialist,4,Acute,High
+Pharyngitis / Strep Throat,ENT / General,"severe sore throat, difficulty swallowing, swollen tonsils with white spots, fever",ROUTINE_CARE,ENT / GP,2,Acute,Low
+Acute Otitis Media,ENT,"earache, fluid drainage from ear, fever, impaired hearing, irritability",ROUTINE_CARE,ENT Specialist,2,Acute,Low
+Acute Sinusitis,ENT,"facial pressure, nasal congestion, green yellow discharge, headache, fever",ROUTINE_CARE,ENT Specialist,2,Subacute,Low
+Kidney Stone (Nephrolithiasis),Urology,"sudden severe flank radiating pain to groin, blood in urine, nausea, restlessness",URGENT_12_24_HRS,Urologist,4,Acute,High
+Acute Pancreatitis,Gastroenterology,"severe upper abdominal pain radiating to back, vomiting, fever, abdominal tenderness",EMERGENCY_IMMEDIATE,Gastroenterologist / ER,4,Acute,Critical
+Cellulitis,Dermatology / Infectious,"expanding red swollen skin area, warmth, tenderness, fever, red streaks",URGENT_12_24_HRS,Dermatologist / GP,3,Acute,Medium
+Contact Dermatitis,Dermatology,"itchy red rash, small blisters, dry scaly skin after exposure",SELF_CARE,Dermatologist,1,Acute,Low
+Urticaria (Hives),Dermatology / Allergy,"itchy raised red wheals, skin swelling, self-limiting or allergic",SELF_CARE,Allergist / Dermatologist,1,Acute,Low
+Herpes Zoster (Shingles),Dermatology / Neurology,"painful burning rash in dermatomal strip, fluid-filled blisters, tingling",ROUTINE_CARE,Dermatologist / GP,3,Acute,Low
+Thyrotoxicosis / Hyperthyroidism,Endocrinology,"palpitations, weight loss, heat intolerance, tremor, anxiety, frequent bowel movements",ROUTINE_CARE,Endocrinologist,2,Chronic,Low
+Hypothyroidism,Endocrinology,"fatigue, weight gain, cold intolerance, dry skin, constipation, depression",ROUTINE_CARE,Endocrinologist,1,Chronic,Low
+Rheumatoid Arthritis,Rheumatology,"joint pain and stiffness in hands, morning stiffness > 1 hour, joint swelling",ROUTINE_CARE,Rheumatologist,2,Chronic,Low
+Gouty Arthritis,Rheumatology,"sudden severe pain and swelling in big toe, redness, warmth, touch sensitivity",ROUTINE_CARE,Rheumatologist / GP,3,Acute,Low
+Iron Deficiency Anemia,Hematology,"pale skin, fatigue, weakness, shortness of breath on exertion, cold hands",ROUTINE_CARE,Hematologist / GP,1,Chronic,Low
+Deep Vein Thrombosis (DVT),Vascular / ER,"unilateral leg swelling, calf pain and tenderness, warmth, redness",URGENT_12_24_HRS,Vascular Specialist / ER,3,Acute,High
+Pulmonary Embolism (PE),Emergency / Pulmonology,"sudden shortness of breath, sharp chest pain on inspiration, rapid heart rate, coughing blood",EMERGENCY_IMMEDIATE,Pulmonologist / ER,5,Acute,Critical
+Meningitis,Emergency / Infectious,"high fever, severe headache, stiff neck, confusion, sensitivity to light, rash",EMERGENCY_IMMEDIATE,Infectious Disease / ER,5,Acute,Critical
+Influenza (Flu),General Medicine,"sudden high fever, body aches, chills, fatigue, dry cough, sore throat",SELF_CARE,General Practitioner,2,Acute,Low
+Common Cold,General Medicine,"runny nose, sneezing, mild sore throat, low-grade fever, congestion",SELF_CARE,Self-Care,1,Acute,Low
+Acute Gastroenteritis,General Medicine,"watery diarrhea, stomach cramps, nausea, vomiting, low fever",SELF_CARE,General Practitioner,2,Acute,Low
+Restless Legs Syndrome,Neurology,"uncomfortable urge to move legs during rest, relieved by movement",SELF_CARE,Neurologist,1,Chronic,Low
+Seasonal Allergic Rhinitis,Allergy,"sneezing, itchy watery eyes, clear runny nose, nasal congestion",SELF_CARE,Allergist,1,Chronic,Low
+Plantarc Fasciitis,Orthopedics,"sharp heel pain upon first morning steps, easing with activity",SELF_CARE,Orthopedist,1,Chronic,Low
+Mild Tension Headache,Neurology,"dull aching band-like pain across forehead, mild scalp tenderness",SELF_CARE,Self-Care,1,Acute,Low
+Acute Diverticulitis,Gastroenterology,"lower left quadrant abdominal pain, fever, nausea, constipation, abdominal bloating",URGENT_12_24_HRS,Gastroenterologist / General Surgeon,3,Acute,High
+Acute Angle-Closure Glaucoma,Ophthalmology / ER,"severe eye pain, blurred vision, rainbow halos around lights, headache, nausea, dilated pupil",EMERGENCY_IMMEDIATE,Ophthalmologist / ER,5,Acute,Critical
+Acute Laryngitis,ENT,"hoarseness, loss of voice, tickling sore throat, dry cough",SELF_CARE,ENT Specialist,1,Acute,Low
+Acute Mastoiditis,ENT / Emergency,"pain behind ear, swelling over mastoid bone, ear discharge, high fever, redness",EMERGENCY_IMMEDIATE,ENT Surgeon / ER,4,Acute,Critical
+Acute Prostatitis,Urology,"perineal pain, fever, chills, painful difficulty urinating, low back pain",URGENT_12_24_HRS,Urologist,3,Acute,Medium
+Addisonian Crisis,Endocrinology / ER,"severe weakness, hyperpigmentation, dizziness, severe low blood pressure, confusion, abdominal pain",EMERGENCY_IMMEDIATE,Endocrinologist / ER,5,Acute,Critical
+Atrial Fibrillation,Cardiology,"rapid irregular heartbeats, palpitations, fatigue, shortness of breath, lightheadedness",URGENT_12_24_HRS,Cardiologist,3,Acute,High
+Bell's Palsy,Neurology,"sudden facial weakness on one side, drooling, inability to close eye, altered taste",ROUTINE_CARE,Neurologist,3,Acute,Medium
+Benign Prostatic Hyperplasia (BPH),Urology,"weak urinary stream, frequent nighttime urination, hesitancy, dribbling",ROUTINE_CARE,Urologist,1,Chronic,Low
+Carpal Tunnel Syndrome,Neurology / Orthopedics,"numbness and tingling in thumb and index fingers, wrist pain, hand weakness",ROUTINE_CARE,Neurologist / Hand Specialist,2,Chronic,Low
+Celiac Disease,Gastroenterology,"chronic diarrhea, abdominal bloating, fatigue, weight loss, pale foul stool",ROUTINE_CARE,Gastroenterologist,2,Chronic,Low
+Cervical Radiculopathy,Orthopedics / Neurology,"neck pain radiating down arm, numbness in fingers, muscle weakness",ROUTINE_CARE,Spine Specialist / Neurologist,2,Chronic,Low
+Chronic Kidney Disease,Nephrology,"swollen ankles, fatigue, metallic taste, nausea, foamy urine, muscle cramps",ROUTINE_CARE,Nephrologist,2,Chronic,Medium
+COPD Exacerbation,Pulmonology,"worsening shortness of breath, increased sputum production, wheezing, chest tightness",URGENT_12_24_HRS,Pulmonologist,4,Acute,High
+Endometriosis,Gynecology,"severe pelvic pain during menstruation, painful intercourse, chronic pelvic cramps, infertility",ROUTINE_CARE,OB-GYN Specialist,3,Chronic,Low
+Fibromyalgia,Rheumatology,"widespread body muscle pain, tender trigger points, fatigue, sleep disturbance, brain fog",ROUTINE_CARE,Rheumatologist,2,Chronic,Low
+Heart Failure Exacerbation,Cardiology,"shortness of breath when lying flat, leg edema, sudden weight gain, fatigue, nocturnal dyspnea",EMERGENCY_IMMEDIATE,Cardiologist / ER,4,Acute,Critical
+Hepatitis B / C,Hepatology,"jaundice yellow eyes, dark urine, abdominal right upper pain, fatigue, loss of appetite",ROUTINE_CARE,Hepatologist / Gastroenterologist,2,Subacute,Medium
+Herniated Lumbar Disc,Orthopedics,"sharp lower back pain radiating down leg sciatica, numbness in foot, pain with sitting",ROUTINE_CARE,Orthopedic Spine Surgeon,3,Acute,Low
+Genital Herpes,Dermatology / Infectious,"painful blisters on genitals, itching, burning with urination, flu-like symptoms",ROUTINE_CARE,Dermatologist / GP,2,Acute,Low
+Vestibular Neuritis / Labyrinthitis,ENT / Neurology,"sudden severe room-spinning vertigo, nausea, loss of balance, nystagmus",ROUTINE_CARE,ENT / Neurologist,3,Acute,Medium
+Lyme Disease,Infectious Disease,"bullseye expanding rash, joint pain, fatigue, fever, neck stiffness",ROUTINE_CARE,Infectious Disease Specialist,2,Subacute,Low
+Malaria,Infectious Disease,"cyclical high fever, severe shaking chills, profuse sweating, headache, anemia",EMERGENCY_IMMEDIATE,Infectious Disease / ER,4,Acute,Critical
+Meniere's Disease,ENT,"episodic vertigo, low-pitch tinnitus, hearing loss, ear fullness sensation",ROUTINE_CARE,ENT Specialist,2,Chronic,Low
+Infectious Mononucleosis,Infectious Disease,"extreme fatigue, severe sore throat, swollen cervical lymph nodes, high fever, enlarged spleen",ROUTINE_CARE,General Practitioner,3,Subacute,Low
+Multiple Sclerosis,Neurology,"vision loss in one eye, double vision, numbness in limbs, gait instability, fatigue",ROUTINE_CARE,Neurologist,3,Subacute,Medium
+Osteoarthritis,Orthopedics,"joint pain worsening with activity, morning stiffness < 30 mins, joint crepitus",ROUTINE_CARE,Orthopedist,2,Chronic,Low
+Pelvic Inflammatory Disease (PID),Gynecology,"lower abdominal pain, abnormal cervical discharge, painful intercourse, fever, dysuria",URGENT_12_24_HRS,OB-GYN Specialist,3,Acute,High
+Peripheral Artery Disease,Vascular,"leg cramp pain while walking claudication, cold feet, pale legs, weak pulse",ROUTINE_CARE,Vascular Surgeon,2,Chronic,Medium
+Polycystic Ovary Syndrome (PCOS),Gynecology / Endocrinology,"irregular menstrual cycles, facial hair growth, acne, weight gain, ovarian cysts",ROUTINE_CARE,Endocrinologist / OB-GYN,1,Chronic,Low
+Psoriasis,Dermatology,"silver scaly red skin patches, silvery scales on elbows knees, pitted nails",ROUTINE_CARE,Dermatologist,1,Chronic,Low
+Sciatica,Orthopedics,"sharp burning pain from lower back down thigh and calf, tingling foot",ROUTINE_CARE,Orthopedist / Neurologist,2,Acute,Low
+Sepsis / Septicemia,Emergency / Infectious,"high fever or low body temp, rapid heart rate, confusion, low blood pressure, severe shivering",EMERGENCY_IMMEDIATE,Emergency Physician,5,Acute,Critical
+Tension Pneumothorax,Emergency / Pulmonology,"sudden sharp chest pain, severe dyspnea, tracheal deviation, absent breath sounds",EMERGENCY_IMMEDIATE,Emergency Physician / Trauma Surgeon,5,Acute,Critical
+Testicular Torsion,Urology / ER,"sudden severe unilateral testicular pain, scrotal swelling, nausea, vomiting",EMERGENCY_IMMEDIATE,Urologist / ER,5,Acute,Critical
+Trigeminal Neuralgia,Neurology,"sudden electric-shock pain in cheek or jaw triggered by touching face or chewing",ROUTINE_CARE,Neurologist,4,Acute,Low
+Typhoid Fever,Infectious Disease,"prolonged high fever, rose spots on chest, constipation or diarrhea, abdominal discomfort, fatigue",URGENT_12_24_HRS,Infectious Disease / GP,3,Subacute,High
