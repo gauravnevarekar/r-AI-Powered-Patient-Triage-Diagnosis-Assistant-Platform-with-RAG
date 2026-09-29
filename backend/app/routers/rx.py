@@ -7,7 +7,7 @@ router = APIRouter(prefix="/api/rx", tags=["Prescription Q&A (RAG)"])
 @router.post("/qa", response_model=PrescriptionQAResponse)
 def prescription_qa(req: PrescriptionQARequest):
     """Answer patient questions regarding prescriptions using drug monograph RAG."""
-    drug_name = req.prescription_name or "Amoxicillin-Clavulanate"
+    drug_name = req.prescription_name or ""
     res = rx_rag_service.answer_question(drug_name, req.question)
     
     return PrescriptionQAResponse(

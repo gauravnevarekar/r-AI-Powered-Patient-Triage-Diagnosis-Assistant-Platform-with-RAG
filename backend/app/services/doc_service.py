@@ -69,9 +69,15 @@ class RealDocumentProcessingService:
             history_items.append(f"Hemoglobin: {hb_match.group(1)} g/dL")
 
         # Medication extraction
-        med_keywords = ["amoxicillin", "paracetamol", "acetaminophen", "ibuprofen", "metformin", "atorvastatin", "pantoprazole", "azithromycin", "ciprofloxacin", "losartan"]
+        dosages = re.findall(r'\b([A-Z][a-zA-Z\-]+(?:\s+[A-Za-z\-]+)?\s+\d+\s*(?:mg|mcg|g|ml))\b', extracted_text)
+        for d in dosages:
+            d_clean = d.strip()
+            if d_clean not in medications:
+                medications.append(d_clean)
+
+        med_keywords = ["amoxicillin", "paracetamol", "acetaminophen", "ibuprofen", "metformin", "atorvastatin", "pantoprazole", "azithromycin", "ciprofloxacin", "losartan", "lisinopril", "amlodipine", "omeprazole", "levothyroxine", "albuterol", "gabapentin", "prednisone", "doxycycline"]
         for med in med_keywords:
-            if med in text_lower:
+            if med in text_lower and not any(med in m.lower() for m in medications):
                 medications.append(med.title())
 
         # Allergy extraction

@@ -72,7 +72,7 @@ class TriageAssessResponse(BaseModel):
 
 class PrescriptionQARequest(BaseModel):
     session_id: Optional[str] = "session_rx"
-    prescription_name: Optional[str] = "Amoxicillin-Clavulanate"
+    prescription_name: Optional[str] = None
     question: str
 
 class PrescriptionQAResponse(BaseModel):

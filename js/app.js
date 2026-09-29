@@ -13,7 +13,8 @@ const AppState = {
   secondaryNotes: '',
   uploadedFiles: [],
   latestAssessment: null,
-  rxContext: 'Amoxicillin-Clavulanate 875/125 mg'
+  rxContext: null,
+  uploadedPrescription: null
 };
 
 // Navigation Function
@@ -43,6 +44,7 @@ function navigateTo(screenId) {
   } else if (screenId === 'screen-rx-qa') {
     const navRx = document.getElementById('nav-rx');
     if (navRx) navRx.classList.add('text-primary', 'font-bold');
+    renderRxCard();
   } else if (screenId === 'screen-records') {
     const navRecords = document.getElementById('nav-records');
     if (navRecords) navRecords.classList.add('text-primary', 'font-bold');
@@ -145,6 +147,20 @@ async function handleFileUpload(event) {
       `;
       container.prepend(card);
     }
+    if (data.extracted_medications && data.extracted_medications.length > 0 && data.extracted_medications[0] !== "No specific chronic medications flagged") {
+      AppState.rxContext = data.extracted_medications.join(', ');
+      AppState.uploadedPrescription = {
+        filename: data.filename,
+        medications: data.extracted_medications
+      };
+    } else {
+      AppState.rxContext = data.filename;
+      AppState.uploadedPrescription = {
+        filename: data.filename,
+        medications: [data.filename]
+      };
+    }
+    renderRxCard();
   } catch (err) {
     console.error('File upload error:', err);
   }
@@ -362,8 +378,63 @@ async function purgePatientSession() {
     await fetch(`/api/privacy/session/${AppState.sessionId}`, { method: 'DELETE' });
     alert('All session data permanently purged under DPDP Act 2023.');
     AppState.sessionId = 'sess_' + Math.random().toString(36).substr(2, 9);
+    AppState.rxContext = null;
+    AppState.uploadedPrescription = null;
+    renderRxCard();
     navigateTo('screen-home');
   } catch (err) {
     console.error('Erasure error:', err);
   }
 }
+
+// Render Attached Prescription Card for Rx Q&A
+function renderRxCard() {
+  const container = document.getElementById('attached-prescription-container');
+  if (!container) return;
+
+  if (AppState.uploadedPrescription || AppState.rxContext) {
+    const rxName = AppState.rxContext || (AppState.uploadedPrescription ? AppState.uploadedPrescription.filename : '');
+    const meds = (AppState.uploadedPrescription && AppState.uploadedPrescription.medications && AppState.uploadedPrescription.medications.length > 0)
+      ? AppState.uploadedPrescription.medications.join(', ')
+      : rxName;
+
+    container.innerHTML = `
+      <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+        <div>
+          <div class="flex items-center gap-1.5 mb-1">
+            <span class="material-symbols-outlined text-[18px] text-primary">description</span>
+            <span class="font-label-md text-label-md text-on-surface font-bold">Attached Prescription</span>
+          </div>
+          <p class="font-body-sm text-secondary">${meds}</p>
+        </div>
+        <button type="button" class="text-xs text-secondary hover:text-error px-2 py-1" onclick="clearAttachedPrescription()">
+          Clear
+        </button>
+      </div>
+    `;
+  } else {
+    container.innerHTML = `
+      <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col items-center text-center py-6 gap-2">
+        <div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+          <span class="material-symbols-outlined text-[24px]">upload_file</span>
+        </div>
+        <span class="font-label-md text-on-surface font-semibold">No Prescription Attached</span>
+        <p class="font-body-sm text-secondary">Upload a prescription to ask questions about your medication, side effects, and interactions.</p>
+        <label class="mt-2 inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary text-on-primary font-label-md cursor-pointer hover:bg-primary/90 transition-colors">
+          <span class="material-symbols-outlined text-[18px]">cloud_upload</span>
+          <span>Upload Prescription</span>
+          <input type="file" class="hidden" accept="image/*,application/pdf" onchange="handleFileUpload(event)">
+        </label>
+      </div>
+    `;
+  }
+}
+
+function clearAttachedPrescription() {
+  AppState.rxContext = null;
+  AppState.uploadedPrescription = null;
+  renderRxCard();
+}
+
+document.addEventListener('DOMContentLoaded', renderRxCard);
+
